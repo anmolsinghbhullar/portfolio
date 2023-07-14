@@ -16,17 +16,19 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>My Showcase</h1>
+      <h4>(i think theyre pretty cool)</h4>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          <a className='hover-link'>Hire me!</a>
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Some card style showcasing of each project along with tags of the 
+        frameworks/languages I used to create them.
       </p>
     </>
   )
