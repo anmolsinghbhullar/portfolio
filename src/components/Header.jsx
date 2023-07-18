@@ -4,7 +4,7 @@ import './Header.css';
 function Header() {
     return (
         <header className='header'>
-            <h1 className='header-title'>Anmol's Portfolio</h1>
+            <a href='/'><h1 className='header-title'>Anmol's Portfolio</h1></a>
             <nav className="header-nav">
                 <ul className="nav-list">
                 <li className="nav-item"><a href="#home">Download CV</a></li>
@@ -16,12 +16,12 @@ function Header() {
                     <li className="dropdown-item"><a href="#project3">Project 3</a></li>
                     </ul>
                 </li>
-                <li className="nav-item"><a href="#about">About</a></li>
+                <li className="nav-item"><a href="about">About</a></li>
                 <li className="nav-item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-    )
+    );
 }
 
 export default Header;

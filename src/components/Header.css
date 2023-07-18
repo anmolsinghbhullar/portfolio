@@ -5,10 +5,25 @@
     justify-content: space-between;
     padding: 0px;
   }
-  
+ 
 .header-title {
     font-size: 1.5em;
     color: black;
+}
+
+.header-title a {
+    color: black;
+    font-family: Helvetica;
+}
+
+.header-title a:hover {
+    color: black;
+}
+
+.header-title::selection {
+    background: pink;
+    /* trans bug color: skyblue; */
+    color: skyblue;
 }
 
 .header-nav .nav-list {

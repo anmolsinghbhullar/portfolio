@@ -1,50 +1,18 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import NotFoundPage from './components/404Page';
+import AboutPage from './components/AboutPage';
 
 function App() {
-  // state vars to handle text transition on button click
-  const [text, setText] = useState(".help(filter_my_thoughts());");
-  const [isClicked, setClicked] = useState(false);
-  const fullText = "creating_your_next_idea();"
-
-  const handleClick = () => {
-    setText("");
-    setClicked(true);
-  }
-
-  // uses timers to handle how fast transition occurs
-  useEffect(() => {
-    if (isClicked) {
-      if (text !== fullText) {
-        const timer = setTimeout(() => {
-          setText((prevText) => {
-            return fullText.substring(0, prevText.length + 1);
-          });
-        }, 100);
-
-        return () => clearTimeout(timer);
-      }
-    }
-  }, [text, isClicked]);
-
-  // TODO: static gif becomes something new organized and tidy once clicked (we can remove ability to go back and forth once this happens)
   return (
-    <>
-      <header>
-        <Header />
-      </header>
-      <div className='static'>
-        <div className="card">
-          <button onClick={handleClick}>
-            {text}
-          </button>
-        </div>        
-      </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path='/' element={<HomePage />} index />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/*' element={<NotFoundPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
