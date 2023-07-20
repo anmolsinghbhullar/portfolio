@@ -22,7 +22,6 @@
 
 .header-title::selection {
     background: pink;
-    /* trans bug color: skyblue; */
     color: skyblue;
 }
 

@@ -1,6 +1,6 @@
 import './HomePage.css';
 import React from 'react';
-import Header from './Header';
+import Layout from '../components/Layout';
 import { useEffect, useState } from 'react';
 
 function HomePage() {
@@ -32,16 +32,15 @@ function HomePage() {
     // TODO: static gif becomes something new organized and tidy once clicked (we can remove ability to go back and forth once this happens)
     return (
         <>
-            <header>
-                <Header />
-            </header>
-            <div className='static'>
-                <div className="card">
-                    <button onClick={handleClick}>
-                        {text}
-                    </button>
-                </div>        
-            </div>
+            <Layout>
+              <div className='static'>
+                <div className='button'>
+                  <button onClick={handleClick}>
+                    {text}
+                  </button>
+                </div>
+              </div>
+            </Layout>
         </>
     );
 }

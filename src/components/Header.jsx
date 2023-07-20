@@ -9,7 +9,7 @@ function Header() {
                 <ul className="nav-list">
                 <li className="nav-item"><a href="#home">Download CV</a></li>
                 <li className="nav-item">
-                    <a href="#projects">Projects</a>
+                    <a href="projects">Projects</a>
                     <ul className="dropdown-menu">
                     <li className="dropdown-item"><a href="#project1">Project 1</a></li>
                     <li className="dropdown-item"><a href="#project2">Project 2</a></li>
@@ -17,7 +17,7 @@ function Header() {
                     </ul>
                 </li>
                 <li className="nav-item"><a href="about">About</a></li>
-                <li className="nav-item"><a href="#contact">Contact</a></li>
+                <li className="nav-item"><a href="contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
