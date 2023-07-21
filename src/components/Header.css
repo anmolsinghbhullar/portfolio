@@ -1,9 +1,39 @@
 /* Header.css */
 
 .header {
+    display: grid;
+    grid-template-columns: 1.3fr 1.6fr;
+    grid-template-rows: 10vh 70vh 5vh;
+}
+
+.title {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.links {
+    grid-row: 1;
+    grid-column: 2;
+
+    display: flex;
+    justify-content: end;
+    place-items: end;
+    text-align: right;
+}
+
+.header .links ul {
+    margin-bottom: 0vh;
+}
+
+.header .links ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+}
+
+/* .header {
     display: flex;
     justify-content: space-between;
-    padding: 0px;
   }
  
 .header-title {
@@ -56,4 +86,4 @@
 
 .nav-item:hover .dropdown-menu {
     display: block;
-}
+} */
