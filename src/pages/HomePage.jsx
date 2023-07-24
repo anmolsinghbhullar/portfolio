@@ -33,13 +33,11 @@ function HomePage() {
     return (
         <>
             <Layout>
-              <div className='static'>
-                <div className='button'>
-                  <button onClick={handleClick}>
-                    {text}
-                  </button>
-                </div>
-              </div>
+				<div className='static'>
+                  	<button onClick={handleClick}>
+                    	{text}
+                	</button>
+              	</div>
             </Layout>
         </>
     );

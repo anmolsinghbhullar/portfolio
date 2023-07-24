@@ -1,25 +1,30 @@
 /* Layout.css */
 
-.grid {
-    display: grid;
-    grid-template-columns: minmax(5px, 0.6fr) 1.3fr 1.6fr minmax(5px, 0.6fr);
-    grid-template-rows: 10vh 70vh 5vh;
-    position: relative;
-    /* top: 10vh; */
-    /* gap: 10px */
+.page {
+    display: flex;
+    flex-direction: column;
+    /* set dimensions and center it */
+    width: 74%;
+    margin: 0 auto;
+    height: 95vh;
 }
 
-.grid header {
-    grid-row: 1;
-    grid-column: 2 / span 2;
+/* TODO: Set media style if screen is below 650 width */
+.page header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: none; /* keep its natural height */
 }
 
-.content {
-    grid-row: 2;
-    grid-column: 2 / span 2;
+.page .content {
+    display: flex;
+    flex: 55 0 auto;
+    justify-content: center;
 }
 
-.grid footer {
-    grid-row: 3;
-    grid-column: 2 / span 2;
+.page footer {
+    display: flex;
+    flex: 1 0 auto; /* keep its natural height */
+    justify-content: flex-end;
 }
