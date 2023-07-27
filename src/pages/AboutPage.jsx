@@ -50,20 +50,31 @@ function AboutPage() {
     return (
         <>
             <Layout>
-                <h1>About Me</h1>
-                <div className='about-me-links'>
-                    <button className='content-button' onClick={handleSummaryClick}>
-                        Summary
-                    </button>
-                    <button className='content-button' onClick={handleExpClick}>
-                        Experience
-                    </button>
-                    <button className='content-button' onClick={handleSocialsClick}>
-                        Socials
-                    </button>
-                </div>
-                <div className='about-me-content'>
-                    <p>{content}</p>
+                <div className='card'>
+                    <div className='card-header'>
+                        <div className='card-avi'>
+                            <img src='/src/assets/cat-grimacing.png' alt='description' />
+                        </div>
+                        <div className='card-title'>
+                            <h1>About Me</h1>
+                        </div>
+                    </div>
+                    <div className='card-body'>
+                        <div className='card-nav'>
+                            <button className='content-button' onClick={handleSummaryClick}>
+                                Summary
+                            </button>
+                            <button className='content-button' onClick={handleExpClick}>
+                                Experience
+                            </button>
+                            <button className='content-button' onClick={handleSocialsClick}>
+                                Socials
+                            </button>
+                        </div>
+                        <div className='card-content'>
+                            <p>{content}</p>
+                        </div>
+                    </div>
                 </div>
             </Layout>
         </>

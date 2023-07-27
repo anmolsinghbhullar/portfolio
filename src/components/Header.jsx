@@ -4,7 +4,7 @@ import './Header.css';
 function Header() {
     return (
         <>
-            <div className='title'>
+            <div className='header-title'>
                 <h1>Anmol's Portfolio</h1>
             </div>
             <nav className='links'>

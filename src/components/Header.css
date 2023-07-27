@@ -1,6 +1,6 @@
 /*  Header.css */
 
-.title {
+.header-title {
     display: flex;
     flex: 1 0 auto;
 }

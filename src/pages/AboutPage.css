@@ -1,1 +1,47 @@
 /* AboutPage.css */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* positioning within .content */
+    justify-content: center;
+    width: 50%;
+}
+
+.card .card-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.card .card-body {
+    display: flex;
+    flex-direction: row;
+}
+
+/* card-header styling */
+
+.card .card-header .card-avi img {
+    width: 10vh;
+    height: auto;
+}
+
+.card .card-header .card-title h1 {
+    margin: 0;
+}
+
+/* card-body styling */
+
+.card .card-body .card-nav {
+    background-color: rgb(197, 155, 197);
+}
+
+.card .card-body .card-content {
+    background-color: rgb(197, 155, 197);
+    color: white;
+    border-left: solid 3px white;
+}
+
+.card .card-body .card-content p {
+    margin: 0;
+    font-size: small;
+}
