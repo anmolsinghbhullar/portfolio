@@ -25,6 +25,28 @@
     height: auto;
 }
 
+.card .card-header .card-title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3px;
+    margin: 0;
+    width: 100%;
+}
+
+.card .card-header .card-title ul {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(197, 155, 197);
+}
+
+.card .card-header .card-title ul li {
+    list-style: none;
+    display: inline;
+    padding-right: 10px;
+}
+
 .card .card-header .card-title h1 {
     margin: 0;
 }
@@ -33,12 +55,28 @@
 
 .card .card-body .card-nav {
     background-color: rgb(197, 155, 197);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card .card-body .card-nav button {
+    text-align: left;
+    color: white;
+    background-color: rgb(197, 155, 197);
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.card .card-body .card-nav button:hover {
+    background-color: rgb(222, 173, 222);
 }
 
 .card .card-body .card-content {
     background-color: rgb(197, 155, 197);
     color: white;
     border-left: solid 3px white;
+    padding: 10px;
 }
 
 .card .card-body .card-content p {

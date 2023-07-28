@@ -17,13 +17,6 @@ function AboutPage() {
         "Mathematics, mostly those involving evaluating math expressions."
     ];
 
-    const shortSummary = [
-        "Undergraduate in Mathematics",
-        "Full-stack web-dev specialized in React",
-        "Proficient in Cloudflare Pages/Workers",
-        "Experienced with Azure and AWS Services"
-    ];
-
     const exp = [
         "Front-end: React, JavaScript/TypeScript, Adobe PhotoShop and Illustrator and Figma",
         "Back-end: NodeJS, Python, JavaScript, GRAPHQL, MySQL, Azure, Cloudflare"
@@ -33,7 +26,7 @@ function AboutPage() {
         "Goodreads", "Github", "Threads"
     ];
 
-    const [content, setContent] = React.useState(shortSummary);
+    const [content, setContent] = React.useState(summary);
 
     function handleSummaryClick() {
         setContent(summary);
@@ -57,6 +50,11 @@ function AboutPage() {
                         </div>
                         <div className='card-title'>
                             <h1>About Me</h1>
+                            <ul>
+                                <li>123</li>
+                                <li>123</li>
+                                <li>123</li>
+                            </ul>
                         </div>
                     </div>
                     <div className='card-body'>
