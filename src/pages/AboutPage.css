@@ -20,9 +20,14 @@
 
 /* card-header styling */
 
+.card .card-header .card-avi {
+    display: flex;
+}
+
 .card .card-header .card-avi img {
     width: 10vh;
     height: auto;
+    margin-bottom: 5px;
 }
 
 .card .card-header .card-title {
@@ -30,9 +35,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 3px;
+    padding: 5px 0px 5px 5px;
     margin: 0;
     width: 100%;
+    /* background-color: rgb(101, 155, 101); */
 }
 
 .card .card-header .card-title ul {
@@ -45,10 +51,28 @@
     list-style: none;
     display: inline;
     padding-right: 10px;
+    color: white;
+}
+
+.card .card-header .card-title ul li a {
+    color: white;
+}
+
+.card .card-header .card-title ul li a:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card .card-header .card-title .card-title-home {
+    margin-left: 10px;
 }
 
 .card .card-header .card-title h1 {
     margin: 0;
+    color: plum;
+}
+
+.card .card-header .card-title h1::selection {
+    color: pink;
 }
 
 /* card-body styling */
@@ -66,6 +90,8 @@
     background-color: rgb(197, 155, 197);
     border: none;
     border-bottom: 2px solid white;
+    padding: 2px;
+    font-size: small;
 }
 
 .card .card-body .card-nav button:hover {

@@ -51,9 +51,10 @@ function AboutPage() {
                         <div className='card-title'>
                             <h1>About Me</h1>
                             <ul>
-                                <li>123</li>
-                                <li>123</li>
-                                <li>123</li>
+                                <li className='card-title-home'><a href='/'>Home</a></li>
+                                <li><a href='/about'>About</a></li>
+                                <li><a href='/projects'>Projects</a></li>
+                                <li><a href='/contact'>Contact</a></li>
                             </ul>
                         </div>
                     </div>
