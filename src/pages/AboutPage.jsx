@@ -60,15 +60,11 @@ function AboutPage() {
                     </div>
                     <div className='card-body'>
                         <div className='card-nav'>
-                            <button className='content-button' onClick={handleSummaryClick}>
-                                Summary
-                            </button>
-                            <button className='content-button' onClick={handleExpClick}>
-                                Experience
-                            </button>
-                            <button className='content-button' onClick={handleSocialsClick}>
-                                Socials
-                            </button>
+                            <ul>
+                                <li><a href='/about'>Summary</a></li>
+                                <li><a href='/about/exp'>Experience</a></li>
+                                <li><a href='/about/socials'>Socials</a></li>
+                            </ul>
                         </div>
                         <div className='card-content'>
                             <p>{content}</p>

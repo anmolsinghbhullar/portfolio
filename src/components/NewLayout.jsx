@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './Header';
-import './Layout.css';
+import '../pages/AboutPage.css';
 
-const Layout = ({ page_nav, children }) => {
+const NewLayout = ({ page_nav, children }) => {
     return (
         <div className='page'>
             <header>
@@ -26,7 +26,7 @@ const Layout = ({ page_nav, children }) => {
                     </div>
                     <div className='card-body'>
                         <div className='card-nav'>
-                            { title }
+                            { page_nav }
                         </div>
                         <div className='card-content'>
                             { children }
@@ -41,4 +41,4 @@ const Layout = ({ page_nav, children }) => {
     );
 }
 
-export default Layout;
+export default NewLayout;

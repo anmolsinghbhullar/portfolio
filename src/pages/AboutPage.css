@@ -59,7 +59,8 @@
 }
 
 .card .card-header .card-title ul li a:hover {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    background-color: rgb(222, 173, 222);
 }
 
 .card .card-header .card-title .card-title-home {
@@ -82,19 +83,28 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
+    width: 25%;
 }
 
-.card .card-body .card-nav button {
+.card .card-body .card-nav ul {
+    list-style: none;
     text-align: left;
-    color: white;
     background-color: rgb(197, 155, 197);
-    border: none;
-    border-bottom: 2px solid white;
+    margin: 0px;
     padding: 2px;
     font-size: small;
 }
 
-.card .card-body .card-nav button:hover {
+.card .card-body .card-nav ul li {
+    padding-bottom: 1px;
+}
+
+.card .card-body .card-nav ul li a {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.card .card-body .card-nav li:hover {
     background-color: rgb(222, 173, 222);
 }
 
@@ -104,7 +114,7 @@
     border-left: solid 3px white;
     padding: 10px;
     width: 100%;
-    height: 30vh;
+    height: 31vh;
 }
 
 .card .card-body .card-content p {
